@@ -37,6 +37,10 @@ typedef struct {
 //   parte II)
 bool le_triangulo(triangulo *t)
 {
+  printf("Entre com os valores dos 3 lados do triângulo (lado1, lado2, lado3): ");
+  scanf("%f %f %f", &(t->lado1), &(t->lado2), &(t->lado3));
+  if (t->lado1 <= 0 || t->lado2 <= 0 || t->lado3 <= 0)
+    return false;
   return true;
 }
 
